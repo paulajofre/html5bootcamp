@@ -1,0 +1,10 @@
+.remove {
+    align-content: flex-end;
+}
+li {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
