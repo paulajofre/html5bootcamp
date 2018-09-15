@@ -1,4 +1,4 @@
-Social = {
+var Social = {
     share: function(friendName) {
         console.log('Share', this.title, 'with', friendName)
     },

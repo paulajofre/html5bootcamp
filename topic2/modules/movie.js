@@ -7,6 +7,7 @@ export default class Movie extends EventEmitter {
         this.title = title;
         this.year = year;
         this.duration = duration;
+        this.cast = [];
     }
     play(){
         this.emit('play', "The 'play' event has been emitted");
@@ -17,7 +18,12 @@ export default class Movie extends EventEmitter {
     resume(){
         this.emit('resume', "The 'resume' event has been emitted");
     }
-    addCast(name){
-        otherCast.push(new Actor(name));
+    addCast(actors){
+        if (actors.length) {
+            Array.prototype.push.apply(this.cast, actors);
+        }
+        else {
+            this.cast.push(actors);
+        }
     }
 }
