@@ -1,0 +1,25 @@
+{
+  "name": "app",
+  "main": "app.js",
+  "homepage": "https://github.com/paulajofre/html5bootcamp",
+  "authors": [
+    "Paula Jofre <paulajofre91@gmail.com>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.7.4",
+    "angular-mocks": "^1.7.4"
+  },
+  "dependencies": {
+    "angular-mocks": "^1.7.4",
+    "angular-route": "^1.7.4"
+  }
+}

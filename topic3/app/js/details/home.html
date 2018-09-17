@@ -1,0 +1,16 @@
+
+<div>
+        <ul>
+            <li ng-repeat="movie in movies">
+                <h3><a ng-href="/details/{{$index}}">{{movie.name}}</a></h3>
+                <a href="#" ng-click="removeMovie(movie)">x</a>
+                <a href="#" ng-click="editMovie(movie)">Edit</a>
+            </li>
+        </ul>
+        <form ng-submit="addMovie()">
+            <input type="text" placeholder="name" ng-model="newmovie.name" />
+            <input type="submit" value="Add movie" /><br>
+            <input type="text" id="name" placeholder="Click on edit" ng-model="current.name" />
+            <input type="submit" value="Save" ng-click="save()"/><br>
+        </form>
+    </div>
