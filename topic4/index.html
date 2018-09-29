@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="app.js"></script>
+    <title>Topic #4</title>
+</head>
+<body onload="onLoad()">
+    <div id="drop_zone" ondrop="dropHandler(event)" ondragover="dragOverHandler(event)">
+        <h3>Drag and drop text files</h3>
+        <textarea id="text" cols="30" rows="10"></textarea><br>
+        <input type="button" value="Save" onclick="saveContent()" />
+        <input type="button" value="Clear" onclick="clearContent()" />
+    </div>
+
+    <br><br>
+
+    <div class="websocket-topic">
+        <h3>Websocket Echo</h3>
+        <textarea id="logs" cols="30" rows="10"></textarea>
+        <br>
+        <input type="text" id="msg" placeholder="Escriba un mensaje...">
+        <br>
+        <input type="button" value="Enviar" onclick="sendMsg()">
+    </div>
+
+</body>
+</html>
